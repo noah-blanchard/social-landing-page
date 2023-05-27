@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import Logo from '@/components/Logo/Logo';
 import Button from '@/components/Button';
+import NavbarMobile from './NavbarMobile';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-around items-center p-7 absolute w-screen">
-      <div className="space-x-16 flex items-center text-black">
+    <>
+    <NavbarMobile />
+    <nav className="hidden md:flex justify-around items-center p-7 absolute w-screen">
+      <div className="flex space-x-16 items-center text-black">
         <Link href="/">
           <Logo />
         </Link>
@@ -22,10 +25,11 @@ const Navbar: React.FC = () => {
           FAQ
         </Link>
       </div>
-      <div className="">
-        <Button>Sign in</Button>
+      <div className="hidden md:inline-block">
+        <Button className="">Sign in</Button>
       </div>
     </nav>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar/Navbar'
 import LandingSection from '@/components/Sections/LandingSection'
 
 const inter = Inter({ subsets: ['latin'] })
