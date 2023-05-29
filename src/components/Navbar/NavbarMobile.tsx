@@ -1,27 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../Logo/Logo";
-import Button from "../Button";
-
-const ArrowRight: React.FC = () => {
-    return (
-        <svg
-            className="w-6 h-6 inline"
-            fill="none"
-            stroke="black"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-            />
-        </svg>
-    );
-};
+import Button from "../Buttons/Button";
+import { ArrowRight } from "@/components/SVGs/SVGs";
 
 const Hamburger: React.FC<{ onClick: Function; isOpen: boolean }> = ({
   onClick,
@@ -68,7 +49,7 @@ const NavbarMobile: React.FC = () => {
           <Link href="#features" onClick={toggle} style={{width: "100%"}}><div className="flex flex-row justify-between w-full"><span className="text-xl">Features</span><ArrowRight /></div></Link>
           <Link href="#pricing" onClick={toggle} style={{width: "100%"}}><div className="flex flex-row justify-between w-full"><span className="text-xl">Pricing</span><ArrowRight /></div></Link>
           <Link href="#faq" onClick={toggle} style={{width: "100%"}}><div className="flex flex-row justify-between w-full"><span className="text-xl">FAQ</span><ArrowRight /></div></Link>
-          <Button className="self-center w-full text-md">Sign in</Button>
+          <Button onClick={() => console.log("ok")} className="self-center w-full text-md">Sign in</Button>
         </div>
       )}
     </nav>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Logo from '@/components/Logo/Logo';
-import Button from '@/components/Button';
+import Button from '@/components/Buttons/Button';
 import NavbarMobile from './NavbarMobile';
 
 const Navbar: React.FC = () => {

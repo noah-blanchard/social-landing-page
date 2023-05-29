@@ -1,9 +1,13 @@
 import Image from "next/image";
-import Button from "../Button";
+import Button from "../Buttons/Button";
+import { useRouter } from "next/router";
 
 const LandingSection: React.FC = () => {
+
+  const router = useRouter();
+
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-white bg-[url('/landing-bg.png')] bg-center w-screen space-y-10 p-10">
+    <section id="landing" className="flex flex-col items-center justify-center h-screen bg-white bg-[url('/landing-bg.png')] bg-center w-screen space-y-10 p-10">
       <Image
         src="/insta-twitt-faceb.png"
         alt="socials-1"
@@ -24,7 +28,7 @@ const LandingSection: React.FC = () => {
           <Image src="/linkd-ytb.png" alt="socials-2" width={200} height={200} style={{objectFit: "contain"}} />
         </div>
         <div className="mx-auto">
-          <Button className="">Join Now</Button>
+          <Button className="" onClick={() => router.push("join")} >Join Now</Button>
         </div>
         <div className="hidden md:inline-block">
         <Image src="/tikt-snap.png" alt="socials-3" width={200} height={200} style={{objectFit: "contain"}} />
