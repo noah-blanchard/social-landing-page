@@ -36,10 +36,8 @@ const JoinNowSection: React.FC = () => {
     }
 
     const socialSubmit = (socialData: FormData) => {
-        console.log("social submit", data);
         socialData.website = data.current.website;
         data.current = socialData;
-        console.log("social submit", data);
         nextStep();
     }
 
@@ -48,7 +46,7 @@ const JoinNowSection: React.FC = () => {
   return (
     <div className="w-screen h-screen box-border flex items-center justify-center flex-col">
       <Logo />
-      <div className=" w-[300px] md:w-2/6 h-1/2 bg-white flex flex-col items-start justify-evenly outline-none">
+      <div className=" w-[300px] md:w-2/6 bg-white flex flex-col items-center justify-evenly outline-none">
         {steps === 0 && <WebsiteStep submit={websiteSubmit} />}
         {steps === 1 && <SocialStep submit={socialSubmit} />}
       </div>
