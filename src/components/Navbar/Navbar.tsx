@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         </Link>
       </div>
       <div className="hidden md:inline-block">
-        <Button className="">Sign in</Button>
+        <Button className="" onClick={() => console.log("nothing")}>Sign in</Button>
       </div>
     </nav>
     </>

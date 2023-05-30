@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import InputWithButton from "../../Input";
 import Logo from "../../Logo/Logo";
 import WebsiteStep from "./Steps/WebsiteStep";
+import SocialStep from "./Steps/SocialStep";
 interface FormData{
     website?: string,
     facebook: boolean,
@@ -49,6 +50,7 @@ const JoinNowSection: React.FC = () => {
       <Logo />
       <div className=" w-[300px] md:w-2/6 h-1/2 bg-white flex flex-col items-start justify-evenly outline-none">
         {steps === 0 && <WebsiteStep submit={websiteSubmit} />}
+        {steps === 1 && <SocialStep submit={socialSubmit} />}
       </div>
     </div>
   );
