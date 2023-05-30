@@ -3,6 +3,7 @@ import InputWithButton from "../../Input";
 import Logo from "../../Logo/Logo";
 import WebsiteStep from "./Steps/WebsiteStep";
 import SocialStep from "./Steps/SocialStep";
+import Image from "next/image";
 interface FormData{
     website?: string,
     facebook: boolean,
@@ -46,9 +47,10 @@ const JoinNowSection: React.FC = () => {
   return (
     <div className="w-screen h-screen box-border flex items-center justify-center flex-col">
       <Logo />
-      <div className=" w-[300px] md:w-2/6 bg-white flex flex-col items-center justify-evenly outline-none">
+      <div className=" w-[300px] md:w-2/6 min-h-[400px] bg-white flex flex-col items-center justify-evenly outline-none">
         {steps === 0 && <WebsiteStep submit={websiteSubmit} />}
         {steps === 1 && <SocialStep submit={socialSubmit} />}
+        {steps === 2 && <Image src="/svgs/bonjour.svg" width={150} height={150} alt={""} />}
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const LandingSection: React.FC = () => {
         </div>
         <div className="mx-auto">
           <Button className="" onClick={() => router.push("join")}>
-            Join Now
+            Join now
           </Button>
         </div>
         <div className="hidden md:inline-block">

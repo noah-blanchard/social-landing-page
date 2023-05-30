@@ -4,7 +4,7 @@ const Logo: React.FC = () => {
   // use the "./icon.ico" file
   return (
     <div className="inline-block">
-      <Image src="/icon.ico" alt="Logo" width={50} height={50} />
+      <Image src="/logo.png" alt="Logo" width={50} height={50} />
     </div>
   );
 };
