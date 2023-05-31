@@ -17,7 +17,56 @@ export const ArrowRight: React.FC<{ white?: boolean }> = ({ white }) => {
   );
 };
 
+export const ArrowDown: React.FC<{ white?: boolean, size?: number }> = ({ white, size }) => {
+  return (
+    <svg
+      className={`w-${size || 6} h-${size || 6} inline`}
+      fill="none"
+      stroke={white ? "white" : "black"}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  );
+};
 
+export const Hamburger: React.FC<{ onClick: Function; isOpen: boolean }> = ({
+  onClick,
+  isOpen,
+}) => {
+  return (
+    <svg
+      onClick={() => onClick()}
+      className="w-6 h-6 cursor-pointer md:hidden absolute top-7 left-7"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {isOpen ? (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M6 18L18 6M6 6l12 12"
+        />
+      ) : (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      )}
+    </svg>
+  );
+};
 
 export const Wave1: React.FC = () => {
   return (

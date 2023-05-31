@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <>
     <NavbarMobile />
-    <nav className="hidden md:flex justify-around items-center p-7 absolute w-screen">
+    <nav className="hidden md:flex justify-around items-center p-7 absolute w-full">
       <div className="flex space-x-16 items-center text-black font-semibold">
         <Link href="/">
           <Logo />

@@ -1,14 +1,17 @@
 import Image from "next/image";
-import Button from "../Buttons/Button";
+import Button from "../../Buttons/Button";
 import { useRouter } from "next/router";
+import { ArrowDown } from "../../SVGs/SVGs";
+import { smoothScrollTo } from "./helpers";
 
 const LandingSection: React.FC = () => {
   const router = useRouter();
 
+  // get the y coord of the #pricing section
   return (
     <section
       id="landing"
-      className="flex flex-col items-center justify-center h-screen bg-white bg-[url('/landing-bg.png')] bg-center w-screen space-y-10 p-25 md:p-10"
+      className="flex flex-col items-center justify-center h-screen  bg-center w-full box-border space-y-10 p-25 md:p-10"
     >
       <div className="hidden md:inline">
         <Image
@@ -82,6 +85,10 @@ const LandingSection: React.FC = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center cursor-pointer hover:scale-110 transition-transform" onClick={() => smoothScrollTo("pricing")}>
+      <p className="text-black font-semibold text-center">See pricing options</p>
+      <ArrowDown size={12}/>
       </div>
     </section>
   );
