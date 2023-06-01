@@ -20,6 +20,7 @@ export default function Home() {
     <main className="" style={bgStyle}>
       <Navbar />
       <LandingSection />
+      <EmptySpace />
       <PrincingSection />
       <EmptySpace />
     </main>
