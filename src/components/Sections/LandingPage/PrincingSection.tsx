@@ -8,53 +8,63 @@ const PrincingSection: React.FC = () => {
   return (
     <section
       id="pricing"
-      className="flex flex-col md:flex-row items-center justify-center h-screen bg-center w-full box-border gap-y-10 gap-x-10 p-25 md:p-10"
+      className="flex flex-col items-center justify-center bg-center w-full box-border gap-y-10 gap-x-10 p-25 md:pt-24 md:p-10"
     >
-      <PrincingCard
-        onClick={() => router.push("join")}
-        title={"Basic"}
-        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-        price={"$9.99"}
-        enhance={false}
-      >
-        <ul className="text-gray-600">
-          <li className="flex flex-row items-center space-x-2">
-            <Box3D />
-            <span>Lorem ipsum</span>
-          </li>
-          <li className="flex flex-row items-center space-x-2">
-            <PaperPlane />
-            <span>Lorem ipsum</span>
-          </li>
-          <li className="flex flex-row items-center space-x-2">
-            <Bell />
-            <span>Lorem ipsum</span>
-          </li>
-        </ul>
-      </PrincingCard>
-      <PrincingCard
-        onClick={() => router.push("join")}
-        title={"Pro"}
-        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-        price={"$19.99"}
-        enhance={true}
-      >
-        {" "}
-        <ul className="text-gray-600">
-          <li className="flex flex-row items-center space-x-2">
-            <Box3D />
-            <span>Lorem ipsum</span>
-          </li>
-          <li className="flex flex-row items-center space-x-2">
-            <PaperPlane />
-            <span>Lorem ipsum</span>
-          </li>
-          <li className="flex flex-row items-center space-x-2">
-            <Bell />
-            <span>Lorem ipsum</span>
-          </li>
-        </ul>
-      </PrincingCard>
+      <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-black text-center flex-col flex md:space-y-5 px-16">
+        <span>Choose the pricing plan</span>
+        <span className="text-sm md:text-lg font-normal">that fits your needs</span>
+      </h1>
+      <div className="flex flex-col md:space-x-9 md:flex-row gap-y-10 gap-x-10">
+        <PrincingCard
+          onClick={() => router.push("join")}
+          title={"Basic"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+          price={"$9.99"}
+          enhance={false}
+        >
+          <ul className="text-gray-600">
+            <li className="flex flex-row items-center space-x-2">
+              <Box3D />
+              <span>Lorem ipsum</span>
+            </li>
+            <li className="flex flex-row items-center space-x-2">
+              <PaperPlane />
+              <span>Lorem ipsum</span>
+            </li>
+            <li className="flex flex-row items-center space-x-2">
+              <Bell />
+              <span>Lorem ipsum</span>
+            </li>
+          </ul>
+        </PrincingCard>
+        <PrincingCard
+          onClick={() => router.push("join")}
+          title={"Pro"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+          price={"$19.99"}
+          enhance={true}
+        >
+          {" "}
+          <ul className="text-gray-600">
+            <li className="flex flex-row items-center space-x-2">
+              <Box3D />
+              <span>Lorem ipsum</span>
+            </li>
+            <li className="flex flex-row items-center space-x-2">
+              <PaperPlane />
+              <span>Lorem ipsum</span>
+            </li>
+            <li className="flex flex-row items-center space-x-2">
+              <Bell />
+              <span>Lorem ipsum</span>
+            </li>
+          </ul>
+        </PrincingCard>
+      </div>
     </section>
   );
 };

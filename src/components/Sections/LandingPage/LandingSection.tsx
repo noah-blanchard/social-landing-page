@@ -4,6 +4,16 @@ import { useRouter } from "next/router";
 import { ArrowDown } from "../../SVGs/SVGs";
 import { smoothScrollTo } from "./helpers";
 
+const bgStyle = {
+  backgroundImage: `
+  radial-gradient(at 96% 0%, hsla(0,100%,79%,1) 0px, transparent 50%),
+radial-gradient(at 18% 55%, hsla(304,100%,90%,1) 0px, transparent 50%),
+radial-gradient(at 4% 6%, hsla(346,50%,60%,1) 0px, transparent 50%),
+radial-gradient(at 86% 55%, hsla(18,100%,70%,1) 0px, transparent 50%)
+  `,
+  backgroundColor: "background-color:hsla(0,0%,100%,1)",
+};
+
 const LandingSection: React.FC = () => {
   const router = useRouter();
 
@@ -11,7 +21,8 @@ const LandingSection: React.FC = () => {
   return (
     <section
       id="landing"
-      className="flex flex-col items-center justify-center h-screen  bg-center w-full box-border space-y-10 p-25 md:p-10"
+      className="flex flex-col items-center justify-center bg-center w-full box-border space-y-10 p-25 md:p-10"
+      style={bgStyle}
     >
       <div className="hidden md:inline">
         <Image
@@ -86,9 +97,14 @@ const LandingSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center cursor-pointer hover:scale-110 transition-transform" onClick={() => smoothScrollTo("pricing")}>
-      <p className="text-black font-semibold text-center">See pricing options</p>
-      <ArrowDown size={12}/>
+      <div
+        className="flex flex-col justify-center items-center cursor-pointer hover:scale-110 transition-transform"
+        onClick={() => smoothScrollTo("pricing")}
+      >
+        <p className="text-black font-semibold text-center">
+          See pricing options
+        </p>
+        <ArrowDown size={12} />
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ const PrincingCard: React.FC<{
   return (
     <div
       style={enhance ? enhancedBackground : {}}
-      className={`p-6 rounded-lg flex flex-col h-[450px] w-[300px] text-black gap-y-4 border border-gray-300 bg-white shadow-lg`}
+      className={`p-6 rounded-2xl flex flex-col h-[450px] w-[300px] text-black gap-y-4 border border-gray-300 bg-white shadow-lg`}
     >
       <div className="flex justify-between items-start">
         <div className="border border-gray-400 rounded-full p-1 bg-white shadow-md">
@@ -47,7 +47,7 @@ const PrincingCard: React.FC<{
       <BarDivider />
 
       <div className="w-full flex justify-end items-end h-full">
-        <Button onClick={onClick} className="w-full">
+        <Button onClick={onClick} outlined={!enhance} className="w-full">
           Join now
         </Button>
       </div>
