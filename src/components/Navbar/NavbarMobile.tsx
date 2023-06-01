@@ -11,7 +11,7 @@ const NavbarMobile: React.FC = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex md:hidden justify-start items-center p-0 absolute w-screen">
+    <nav className="flex md:hidden justify-start items-center p-0 fixed w-screen">
       <Hamburger onClick={toggle} isOpen={isOpen} />
       {isOpen && (
         <div className="flex flex-col space-y-5 justify-start items-start text-black bg-white h-screen w-4/6 py-28 px-7 shadow-lg">

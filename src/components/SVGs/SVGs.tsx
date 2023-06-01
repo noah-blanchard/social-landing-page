@@ -17,7 +17,10 @@ export const ArrowRight: React.FC<{ white?: boolean }> = ({ white }) => {
   );
 };
 
-export const ArrowDown: React.FC<{ white?: boolean, size?: number }> = ({ white, size }) => {
+export const ArrowDown: React.FC<{ white?: boolean; size?: number }> = ({
+  white,
+  size,
+}) => {
   return (
     <svg
       className={`w-${size || 6} h-${size || 6} inline`}
@@ -64,6 +67,106 @@ export const Hamburger: React.FC<{ onClick: Function; isOpen: boolean }> = ({
           d="M4 6h16M4 12h16M4 18h16"
         />
       )}
+    </svg>
+  );
+};
+
+export const OutlinedLightning: React.FC = () => {
+  return (
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        d="M13 10V3L4 14h7v7l9-11h-7z"
+      ></path>
+    </svg>
+  );
+};
+
+export const OutlinedFavorite: React.FC<{ white?: boolean }> = ({ white }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="#000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1}
+        d="M4.331 12.047 12 20l7.669-7.953A4.804 4.804 0 0 0 21 8.714C21 6.111 18.965 4 16.454 4a4.465 4.465 0 0 0-3.214 1.38L12 6.668 10.76 5.38A4.465 4.465 0 0 0 7.546 4C5.036 4 3 6.11 3 8.714c0 1.25.479 2.45 1.331 3.333Z"
+      />{" "}
+    </svg>
+  );
+};
+
+export const Box3D = () => {
+  return (
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strok-width="1"
+        fill="#000"
+        d="M20.73 16.52V7.59a.73.73 0 0 0-.08-.33.74.74 0 0 0-.36-.36l-8-3.58a.75.75 0 0 0-.62 0l-8 3.58a.8.8 0 0 0-.44.69v8.82a.83.83 0 0 0 .44.69l8 3.58a.72.72 0 0 0 .62 0l8-3.58a.77.77 0 0 0 .44-.58Zm-16-7.78 6.5 2.92v7.18l-6.5-2.91V8.74Zm8 2.92 6.5-2.92v7.19l-6.5 2.91v-7.18ZM12 4.82l6.17 2.77L12 10.35 5.83 7.59 12 4.82Z"
+      />
+    </svg>
+  );
+};
+
+export const PaperPlane = () => {
+  return (
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        id="Vector"
+        d="M10.3078 13.6923L15.1539 8.84619M20.1113 5.88867L16.0207 19.1833C15.6541 20.3747 15.4706 20.9707 15.1544 21.1683C14.8802 21.3396 14.5406 21.3683 14.2419 21.2443C13.8975 21.1014 13.618 20.5433 13.0603 19.428L10.4694 14.2461C10.3809 14.0691 10.3366 13.981 10.2775 13.9043C10.225 13.8363 10.1645 13.7749 10.0965 13.7225C10.0215 13.6647 9.93486 13.6214 9.76577 13.5369L4.57192 10.9399C3.45662 10.3823 2.89892 10.1032 2.75601 9.75879C2.63207 9.4601 2.66033 9.12023 2.83169 8.84597C3.02928 8.52974 3.62523 8.34603 4.81704 7.97932L18.1116 3.88867C19.0486 3.60038 19.5173 3.45635 19.8337 3.57253C20.1094 3.67373 20.3267 3.89084 20.4279 4.16651C20.544 4.48283 20.3999 4.95126 20.1119 5.88729L20.1113 5.88867Z"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />{" "}
+    </svg>
+  );
+};
+
+export const Bell = () => {
+  return (
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M9 17.5V18.5C9 20.1569 10.3431 21 12 21C13.6569 21 15 20.1569 15 18.5V17.5M5.99999 8.5C5.99999 5.18629 8.68628 3.5 12 3.5C15.3137 3.5 18 5.18629 18 8.5C18 10.4392 18.705 12.6133 19.4316 14.3389C20.0348 15.7717 19.0222 17.5 17.4676 17.5H6.53237C4.97778 17.5 3.96518 15.7717 4.56842 14.3389C5.29493 12.6133 5.99999 10.4392 5.99999 8.5Z"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };
