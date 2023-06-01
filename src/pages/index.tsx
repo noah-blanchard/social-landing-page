@@ -21,7 +21,7 @@ export default function Home() {
       <Navbar />
       <LandingSection />
       <PrincingSection />
-      <EmptySpace height={70} />
+      <EmptySpace />
     </main>
   )
 }

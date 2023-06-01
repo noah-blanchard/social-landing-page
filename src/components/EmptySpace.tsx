@@ -1,7 +1,7 @@
 
-const EmptySpace: React.FC<{height: number}> = ({height}) => {
+const EmptySpace: React.FC = ({}) => {
     return(
-        <div className={`w-full h-[{${height}px]`} />
+        <div className={`w-full h-[80px]`} ></div>
     )
 }
 
