@@ -11,7 +11,10 @@ const InputWithButton: React.FC<{label: React.ReactNode, onBtnClick: Function}> 
     }
 
     const onClickPropagation = () => {
-        onBtnClick(value);
+        if(value.length > 0)
+            onBtnClick(value);
+        else
+            alert("Please enter a valid website !")
     }
 
 
