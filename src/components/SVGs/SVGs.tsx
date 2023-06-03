@@ -171,6 +171,52 @@ export const Bell = () => {
   );
 };
 
+export const Plus: React.FC = () => {
+  return(
+
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M12 5V19M5 12H19"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+
+  )
+}
+
+export const Minus: React.FC = () => {
+  return(
+
+    <svg
+      className="w-6 h-6 inline"
+      fill="none"
+      stroke="black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M5 12H19"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+
+  )
+}
+
 export const Wave1: React.FC = () => {
   return (
     <svg

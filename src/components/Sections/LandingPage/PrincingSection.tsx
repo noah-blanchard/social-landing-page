@@ -12,7 +12,7 @@ const PrincingSection: React.FC = () => {
     >
       <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-black text-center flex-col flex md:space-y-5 px-16">
         <span>Choose the pricing plan</span>
-        <span className="text-sm md:text-lg font-normal">that fits your needs</span>
+        <span className="text-lg md:text-2xl font-normal">that fits your needs</span>
       </h1>
       <div className="flex flex-col md:space-x-9 md:flex-row gap-y-10 gap-x-10">
         <PrincingCard

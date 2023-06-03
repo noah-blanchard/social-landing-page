@@ -21,7 +21,7 @@ const LandingSection: React.FC = () => {
   return (
     <section
       id="landing"
-      className="flex flex-col items-center justify-center bg-center w-full box-border space-y-10 p-25 md:p-10"
+      className="flex flex-col items-center justify-center bg-center w-full box-border space-y-10 p-3 md:p-10"
       style={bgStyle}
     >
       <div className="hidden md:inline">

@@ -1,7 +1,6 @@
-
-const EmptySpace: React.FC = ({}) => {
+const EmptySpace: React.FC<{gradient?: boolean}> = ({gradient}) => {
     return(
-        <div className={`w-full h-[80px]`} ></div>
+        <div className={`w-full h-[80px]`}></div>
     )
 }
 
