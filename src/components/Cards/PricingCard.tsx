@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
-import BarDivider from "./BarDivider";
-import Button from "./Buttons/Button";
-import {  OutlinedFavorite, OutlinedLightning, } from "./SVGs/SVGs";
+import BarDivider from "../BarDivider";
+import Button from "../Buttons/Button";
+import {  OutlinedFavorite, OutlinedLightning, } from "../SVGs/SVGs";
 
 const enhancedBackground = {
   backgroundImage:

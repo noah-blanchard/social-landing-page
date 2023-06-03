@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import PrincingCard from "../../PricingCard";
+import PrincingCard from "../../Cards/PricingCard";
 import { Box3D, PaperPlane, Bell } from "@/components/SVGs/SVGs";
 
 const PrincingSection: React.FC = () => {

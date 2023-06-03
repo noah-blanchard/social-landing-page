@@ -5,6 +5,7 @@ import LandingSection from '@/components/Sections/LandingPage/LandingSection'
 import PrincingSection from '@/components/Sections/LandingPage/PrincingSection'
 import EmptySpace from '@/components/EmptySpace'
 import FAQSection from '@/components/Sections/LandingPage/FAQSection'
+import FeaturesSection from '@/components/Sections/LandingPage/FeaturesSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,9 @@ export default function Home() {
       <LandingSection />
       <EmptySpace />
       <PrincingSection />
-      <EmptySpace gradient />
+      <EmptySpace />
+      <FeaturesSection />
+      <EmptySpace />
       <FAQSection />
     </main>
   )
