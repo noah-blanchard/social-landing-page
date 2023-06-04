@@ -13,6 +13,11 @@ interface FormData{
     tiktok: boolean,
 }
 
+const redirectToDashboard = (data: FormData) => {
+  const params = new URLSearchParams(data as any);
+  window.location.href = `/dashboard?${params.toString()}`;
+}
+
 const JoinNowSection: React.FC = () => {
 
     const [steps, setSteps] = useState(0)
@@ -40,6 +45,7 @@ const JoinNowSection: React.FC = () => {
         socialData.website = data.current.website;
         data.current = socialData;
         nextStep();
+        redirectToDashboard(data.current);
     }
 
     console.log(data)
