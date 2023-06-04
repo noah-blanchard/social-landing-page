@@ -2,8 +2,8 @@ import Accordion from "@/components/Accordion/Accordion";
 
 const bgStyle = {
     backgroundColor: "hsla(0,0%,100%,1)",
-    backgroundImage: `radial-gradient(at 89% 93%, hsla(308,100%,70%,0.37) 0px, transparent 50%),
-    radial-gradient(at 10% 100%, hsla(343,100%,76%,0.45) 0px, transparent 50%)`,
+    backgroundImage: `radial-gradient(at 89% 93%, hsla(308,100%,70%,0.2) 0px, transparent 50%),
+    radial-gradient(at 10% 100%, hsla(343,100%,76%,0.2) 0px, transparent 50%)`,
     backgroundSize: ""
   };
 
@@ -18,18 +18,18 @@ const FAQSection: React.FC = () => {
         <span>Frequently asked questions</span>
       </h1>
       <div className="flex flex-col items-start justify-start w-[300px] md:w-[700px] space-y-10 rounded-lg border shadow-lg p-10 bg-white mb-5">
-        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 200, computer:150}}>
+        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 250, computer:150}}>
             <p className="text-sm md:text-lg font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut. Officiis quasi expedita itaque. Rem atque distinctio repudiandae nulla facere incidunt nisi illum pariatur temporibus voluptates. Molestias tenetur modi consectetur.</p>
         </Accordion>
-        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 200, computer:150}}>
+        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 250, computer:150}}>
         <p className="text-sm md:text-lg font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut. Officiis quasi expedita itaque. Rem atque distinctio repudiandae nulla facere incidunt nisi illum pariatur temporibus voluptates. Molestias tenetur modi consectetur.</p>
 
         </Accordion>
-        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 200, computer:150}}>
+        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 250, computer:150}}>
         <p className="text-sm md:text-lg font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut. Officiis quasi expedita itaque. Rem atque distinctio repudiandae nulla facere incidunt nisi illum pariatur temporibus voluptates. Molestias tenetur modi consectetur.</p>
 
         </Accordion>
-        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 200, computer:150}}>
+        <Accordion title="Lorem ipsum dolor sit amet consectetur adipisicing elit ?" expandHeight={{mobile: 250, computer:150}}>
         <p className="text-sm md:text-lg font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ut. Officiis quasi expedita itaque. Rem atque distinctio repudiandae nulla facere incidunt nisi illum pariatur temporibus voluptates. Molestias tenetur modi consectetur.</p>
 
         </Accordion>

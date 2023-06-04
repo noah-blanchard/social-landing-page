@@ -26,7 +26,7 @@ const Accordion: React.FC<{
       <div
         className="flex flex-row justify-between items-center cursor-pointer"
       >
-        <h1 className="text-lg md:text-xl">{title}</h1>
+        <h1 className="text-md md:text-xl">{title}</h1>
         <button className="focus:outline-none">
           {isOpen ? <Minus /> : <Plus />}
         </button>

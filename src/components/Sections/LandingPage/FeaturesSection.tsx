@@ -10,30 +10,30 @@ import {
 const bg1 = {
   backgroundColor: "hsla(0, 0%, 100%, 1)",
   backgroundImage: `
-    radial-gradient(at 98% 98%, hsla(308,100%,70%,0.2) 0px, transparent 50%),
-    radial-gradient(at 3% 10%, hsla(343,100%,76%,0.2) 0px, transparent 50%)   `,
+    radial-gradient(at 98% 98%, hsla(308,100%,70%,0.05) 0px, transparent 50%),
+    radial-gradient(at 3% 10%, hsla(343,100%,76%,0.05) 0px, transparent 50%)   `,
 };
 
 const bg2 = {
   backgroundColor: "hsla(0, 0%, 100%, 1)",
   backgroundImage: `
-  radial-gradient(at 16% 100%, hsla(308,100%,70%,0.18) 0px, transparent 50%),
-radial-gradient(at 88% 15%, hsla(27,100%,50%,0.19) 0px, transparent 50%)`,
+  radial-gradient(at 16% 100%, hsla(308,100%,70%,0.05) 0px, transparent 50%),
+radial-gradient(at 88% 15%, hsla(27,100%,50%,0.05) 0px, transparent 50%)`,
 };
 
 const bg3 = {
   backgroundColor: "hsla(0, 0%, 100%, 1)",
   backgroundImage: `
-    radial-gradient(at 97% 3%, hsla(285,100%,50%,0.15) 0px, transparent 50%),
-radial-gradient(at 13% 90%, hsla(343,100%,76%,0.2) 0px, transparent 50%)
+    radial-gradient(at 97% 3%, hsla(285,100%,50%,0.05) 0px, transparent 50%),
+radial-gradient(at 13% 90%, hsla(343,100%,76%,0.05) 0px, transparent 50%)
     `,
 };
 
 const bg4 = {
   backgroundColor: "hsla(0, 0%, 100%, 1)",
   backgroundImage: `
-        radial-gradient(at 7% 8%, hsla(287,83%,47%,0.19) 0px, transparent 50%),
-radial-gradient(at 86% 84%, hsla(239,94%,50%,0.15) 0px, transparent 50%)
+        radial-gradient(at 7% 8%, hsla(287,83%,47%,0.05) 0px, transparent 50%),
+radial-gradient(at 86% 84%, hsla(239,94%,50%,0.05) 0px, transparent 50%)
 `,
 };
 
