@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
 import BarDivider from "../BarDivider";
 import Button from "../Buttons/Button";
-import {  OutlinedFavorite, OutlinedLightning, } from "../SVGs/SVGs";
+import { OutlinedFavorite, OutlinedLightning } from "../SVGs/SVGs";
 
 const enhancedBackground = {
   backgroundImage:
@@ -19,7 +19,7 @@ const PrincingCard: React.FC<{
   return (
     <div
       style={enhance ? enhancedBackground : {}}
-      className={`p-6 rounded-2xl flex flex-col h-[450px] w-[300px] text-black gap-y-4 border border-gray-300 bg-white shadow-lg`}
+      className={`p-6 rounded-2xl flex flex-col h-[450px] w-[100%] text-black gap-y-4 border border-gray-300 bg-white shadow-lg`}
     >
       <div className="flex justify-between items-start">
         <div className="border border-gray-400 rounded-full p-1 bg-white shadow-md">

@@ -52,7 +52,7 @@ const FeaturesSection: React.FC = () => {
           What do we provide ?
         </span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-[300px] md:w-[700px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full px-10 md:w-[700px]">
         <FeatureCard
           title="High quality service"
           description={lorem}

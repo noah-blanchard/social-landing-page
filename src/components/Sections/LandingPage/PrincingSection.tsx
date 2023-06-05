@@ -20,7 +20,7 @@ const PrincingSection: React.FC = () => {
           that fits your needs
         </span>
       </h1>
-      <div className="flex flex-col md:space-x-9 md:flex-row gap-y-10 gap-x-10">
+      <div className="flex flex-col md:space-x-9 md:flex-row gap-y-10 gap-x-10 px-10">
         <PrincingCard
           onClick={() => router.push("join")}
           title={"Basic"}
